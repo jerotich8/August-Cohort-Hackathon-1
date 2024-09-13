@@ -113,9 +113,9 @@ p{
 }
 .project-container{
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(3,1fr);
     grid-template-rows: auto;
-    gap: 40px;
+    gap: 20px;
     padding: 10px 60px;
     text-align: left;
     height: 80vh;
@@ -132,6 +132,14 @@ p{
     background-color: rgb(45, 55, 31);
     color: white;
     padding: 15px;
+}
+.skills{
+    padding: 15px;
+    background-color:  rgb(200, 241, 137);
+}
+.skills ul{
+    margin-left: 20px;
+    padding-left: 20px;
 }
 .link{
     text-decoration: none;
