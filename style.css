@@ -80,8 +80,6 @@ h1{
     padding: 20px;
 }
 .about-me{
-    display: flex;
-    flex-direction: column;
     height: 50vh;
     padding: 0;
 }
@@ -114,7 +112,6 @@ p{
 .project-container{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows: auto;
     gap: 20px;
     padding: 10px 60px;
     text-align: left;
@@ -172,4 +169,139 @@ p{
     align-items: center;
     font-family: SQMarket-Medium;
     padding-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+    body{
+        text-align: center;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    nav ul {
+        gap: 10px;
+    }
+
+    nav ul li a{
+        font-size: 1.2rem;
+    }
+
+    .about-me{
+        height: auto;
+    }
+
+    .education img{
+        height: 60vh;
+    }
+
+    .content-container{
+        grid-template-columns: repeat(2,1fr);
+        height: auto;
+    }
+
+    .content-container > div {
+        padding: 10px;
+    }
+
+    .section{
+        padding: 30px 15px;
+    }
+
+    .project-container{
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    
+    }
+
+   
+
+    .about-me img, .project-1 img, .project-2 img, .skills img {
+        max-width: 80%;
+    }
+}
+
+/* For mobile screens */
+@media (max-width: 480px) {
+    body{
+        margin: 0;
+    }
+    p {
+        font-size: 1rem;
+    }
+
+    header {
+        width: 100%;
+        padding: 15px;
+        height: 10vh;
+    }
+
+    nav ul {
+        padding: 0;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin-left:5px;
+        margin-bottom: 10px;
+        
+    }
+
+    nav ul li a{
+        font-size: 1.1rem ;
+    }
+
+    h1{
+        font-size: 3rem;
+    }
+
+    .about-me{
+        display: block;
+        height: auto;
+    }
+
+
+    .section {
+        width: auto;
+        padding: 10px 10px;
+    }
+    .education{
+        grid-template-columns: 1fr;
+        gap: 5;
+    }
+    .edu-img{
+        width: 100%;
+        height: auto;
+    }
+    .content-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 0px;
+        height: auto;
+    }
+
+    .interests{
+        text-align: center;
+        padding: 0px;
+    }
+
+    .project-container {
+        grid-template-columns: 1fr ;
+        align-items: center;
+        height: auto;
+        padding: 20px 20px;
+    }
+
+    .project-1, .project-2, .skills {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 10px 10px;
+    }
+
+    .about-me img, .project-1 img, .project-2 img, .skills img {
+        max-width: 100%;
+    }
 }
