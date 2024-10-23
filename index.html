@@ -4,37 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <div class="logo">ShayChero</div>
-        <nav>
-            <ul>
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-sm mb-4 bg-secondary navbar-dark container-fluid fixed-top">
+            <a class="navbar-brand" href="#">ShayChero</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="project.html">My Projects</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class ="nav-link btn btn-outline-primary btn-sm btn-block" href="Files/RESUME 2023.pdf" download="Sharon_Jerotich_Resume.pdf" >My Resume</a>
+                  </li>
+                </ul>
+              </div>
         </nav>
     </header>
-    <section id="home" class="section1">
+    <div class="container pt-3 d-flex flex-column justify-content-center align-items-center bg-image w-100" style="margin-top: 70px;">
         <h1><strong>Sharon Jerotich</strong></h1>
-        <p class="par">An aspiring Software Engineer, Interested in building websites and innovative systems</p>
-    </section>
-    <section id="about" class="section">
-        <div class="about-me">
-            <h2 class="ah">Who am I?</h2>
-            <a>
-                <img src="divider-graphic.png" alt="picture" style="width:auto;max-width:100%">
-            </a>
-            <p>I am  Sharon Jerotich Sumukwo, a determined and Passionate individual. I believe in continous learning in every ascept of life to achieve personal growth and development. Personal growth has been known to help people lead a life that is more happier,successful and content.
-                I am currently pursuing a course in software engineering as part of my career growth.
-            </p>
-            <a>
-                <img src="divider-graphic.png" alt="picture" style="width:auto;max-width:100%">
-            </a>
-        </div>
+        <p>An aspiring Software Engineer, Interested in building websites and innovative systems</p>
+    </div>
+    <div class="container mt-4 d-flex flex-column justify-content-center align-items-center w-100 ">
+        <h2 class="">Who am I?</h2>
+        <a>
+            <img src="divider-graphic.png" alt="picture" style="width:auto;max-width:100%">
+        </a>
+        <p class="text-center">I am  Sharon Jerotich Sumukwo, a determined and Passionate individual. I believe in continous learning in every ascept of life to achieve personal growth and development. Personal growth has been known to help people lead a life that is more happier,successful and content.
+            I am currently pursuing a course in software engineering as part of my career growth.
+        </p>
+        <a>
+            <img src="divider-graphic.png" alt="picture" style="width:auto;max-width:100%">
+        </a>
+    </div>
         <div class="content-container">
             <div class="education">
                 <img src="grad.jpg" alt="picture" class="edu-img">
@@ -52,66 +62,42 @@
             </div>
         </div>
     </section>
-    <section id="projects" class="section">
+    <div id="contact" class="container-fluid d-flex justify-content-center align-items-center flex-column">
         <a>
             <img src="divider-graphic.png" alt="picture" style="width:auto;max-width:100%">
         </a>
-        <div class="title">
-            <h2>My Projects and Skills</h2>
-        </div>
-        <div class="project-container">
-            <div class="project-1">
-                <img src="database.png" alt="database" width="60px" height="60px" class="center-img">
-                <div class="par1">
-                    <h3>Library Management System</h3>
-                    <p> A part of simple database system UI with features that allows one to search for books by title making it easier to track availability of books in  a library. The project is still a work in progress.</p>
-                    <a href="https://github.com/jerotich8/LMS-UI.git" class="link">Click Here</a>
-                </div>
-            </div>
-            <div class="project-2">
-                <img src="database.png" alt="database" width="60px" height="60px" class="center-img">
-                <h3>Library Management Database </h3>
-                <p>This is a database built by MySQL. It contains features that can be used to manage books and borrowers, track overdue books and also update check-outs and returns.</p>
-                <a href="https://github.com/jerotich8/Library-Management-System.git" class="link">Click Here</a>
-            </div>  
-            <div class="skills">
-                <img src="database.png" alt="database" width="60px" height="60px" class="center-img">
-                <h3>Programming Languages</h3>
-                <p>Here are some of the programming languages I am proficient in.</p>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>SQL</li>
-                    <li>R for Data Analysis</li>
-                  </ul>
-                  
-            </div>                  
-        </div>
-    </section>
-    <section id="contact" class="section">
-        <a>
-            <img src="divider-graphic.png" alt="picture" style="width:auto;max-width:100%">
-        </a>
-        <div class="contact-title">
+        <div class="contact-title" style="font-family: SQMarket-Medium;">
             <h2>FOLLOW MY JOURNEY</h2>
         <div class="paragraph">
             <p>Contact me at: <a href="mailto:jerotichsharon18@gmail.com">jerotichsharon18@gmail.com</a></p>
             <p>Connect with me on Linkedin and Github!</p>
         </div> 
         </div>
-        <div class="contact-content">
+        <div class="container mt-0 d-flex flex-row justify-content-center align-items-center contact-content">
             <div class="github">
-                <a href="https://github.com/jerotich8" target="_blank"></a>
-                <img src="github-mark.png" alt="github" width="40px" height="auto">
+                <a href="https://github.com/jerotich8" target="_blank" class="me-3" aria-label="Github">
+                    <i class="fab fa-github fa-2x"></i>
+                </a>
+                <a href="https://github.com/jerotich8" target="_blank" aria-label="Github">
+                    <img src="github-mark.png" alt="GitHub Logo" width="40px" height="auto">
+                </a>
             </div>
             <div class="linkedin">
-                <a href="https://www.linkedin.com/in/sharon-jerotich-7802b0197" target="_blank"></a>
-                <img src="LI-In-Bug.png" alt="linkedin" width="40px" height="auto">
+                <a href="https://www.linkedin.com/in/sharon-jerotich-7802b0197" target="_blank" class="me-3" aria-label="LinkedIn" >
+                    <i class="fab fa-linkedin fa-2x"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/sharon-jerotich-7802b0197" target="_blank" aria-label="LinkedIn">
+                    <img src="LI-In-Bug.png" alt="linkedin" width="40px" height="auto">
+                </a>
             </div> 
         </div>
         <div class="footer">
             <p>&copy; 2024 ShayChero</p>
         </div>
-    </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
