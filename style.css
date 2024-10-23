@@ -1,59 +1,10 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
-}
-header{
-    display: flex;
-    position: fixed;
-    width: 100%;
-    background-color: rgb(86, 26, 4);
-    color: white;
-    padding: 20px;
-    z-index: 1000;;
-}
-.logo{
-    margin:0 auto 0 0;
-}
-nav ul{
-    display: flex;
-    justify-content: center;
-    list-style: none;
-}
-nav ul li{
-    margin: 0 15px;
-}
-nav ul li a{
-    color: aqua;
-    text-decoration: none;
-}
-nav ul li a:hover {
-    text-decoration: underline;
-}
-.section{
-    padding: 0;
-    text-align: center; 
-    color: black;
-}
-.section1{
-    display: flex;
-    background-image: url("Background.jpg");
-    background-repeat: no-repeat;
+
+.bg-image{
+    background-image: url(Background.jpg);
     background-size: cover;
     background-position: center;
-    background-blend-mode: normal;
-    height: 100vh;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    padding: 4rem;
-    margin-bottom: 0;
+    height: 80vh;
+    color: white;
 }
 h1{
     font-size: 3em;
@@ -74,7 +25,7 @@ h1{
     gap: 20px;
     padding: 0;
     margin: 0;
-    height: 90vh;
+    height: 70vh;
 }
 .content-container > div {
     padding: 20px;
@@ -94,7 +45,7 @@ h1{
 }
 .education img{
     width: 250px;
-    height: 80vh;
+    height: 60vh;
 }
 .edu-cont{
     margin-top: 10px;
@@ -176,23 +127,6 @@ p{
         text-align: center;
     }
 
-    header {
-        flex-direction: column;
-        align-items: center;
-        padding: 10px;
-    }
-
-    nav ul {
-        gap: 10px;
-    }
-
-    nav ul li a{
-        font-size: 1.2rem;
-    }
-
-    .about-me{
-        height: auto;
-    }
 
     .education img{
         height: 60vh;
@@ -229,35 +163,7 @@ p{
     body{
         margin: 0;
     }
-    p {
-        font-size: 1rem;
-    }
-
-    header {
-        width: 100%;
-        padding: 15px;
-        height: 10vh;
-    }
-
-    nav ul {
-        padding: 0;
-        text-align: center;
-    }
-
-    nav ul li {
-        margin-left:5px;
-        margin-bottom: 10px;
-        
-    }
-
-    nav ul li a{
-        font-size: 1.1rem ;
-    }
-
-    h1{
-        font-size: 3rem;
-    }
-
+    
     .about-me{
         display: block;
         height: auto;
